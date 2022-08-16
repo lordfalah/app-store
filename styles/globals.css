@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.humburger-line {
+  @apply w-[30px] h-[2px] block bg-black my-2 rounded-md 
+  transition duration-300 ease-in-out;
+}
+
+.active-humburger:first-child {
+  @apply rotate-45;
+}
+
+.active-humburger:last-child {
+  @apply -rotate-45;
+}
+
+.active-humburger:nth-child(2) {
+  @apply scale-0;
+}
